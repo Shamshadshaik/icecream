@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f9;
+    color: #49304a;
+}
+
+/* Header */
+
+header {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6e7;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 380px;
+    background: linear-gradient(120deg, #ffc2d1, #cdb4db, #bde0fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #5a189a;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #7b2cbf;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #5a189a;
+}
+
+/* Flavors Section */
+
+.flavors {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.flavors > h2 {
+    color: #7b2cbf;
+    font-size: 32px;
+}
+
+.subtitle {
+    margin: 12px 0 35px;
+    color: #795578;
+}
+
+.ice-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px #d8bfd8;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #7b2cbf;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.card h4 {
+    color: #e75480;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.card button {
+    background-color: #e75480;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #c9184a;
+}
+
+/* Special Offer */
+
+.special {
+    background-color: #ffd6e7;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.special h2 {
+    color: #7b2cbf;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.special p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #3c096c;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .flavors > h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
